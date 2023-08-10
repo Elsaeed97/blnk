@@ -1,0 +1,325 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "blnk",
+    "dateExported": "2023-08-10T10:06:35.844Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "65624a53-4cc8-4d07-ad47-fb29ce5c6b35",
+            "colId": "bb0bca57-f7b3-43ba-b37b-24f7c094cb7d",
+            "containerId": "",
+            "name": "Login",
+            "url": "{{BASE_URL}}/api/users/login/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-10T09:08:37.257Z",
+            "modified": "2023-08-10T09:11:18.313Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"prov\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f063ebed-8132-41ab-b5be-f76bdfcb5f76",
+            "colId": "bb0bca57-f7b3-43ba-b37b-24f7c094cb7d",
+            "containerId": "",
+            "name": "Register",
+            "url": "",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-08-10T09:12:56.411Z",
+            "modified": "2023-08-10T09:12:56.411Z",
+            "headers": []
+        },
+        {
+            "_id": "44ce5341-f11d-4912-840e-0e4782375d44",
+            "colId": "bb0bca57-f7b3-43ba-b37b-24f7c094cb7d",
+            "containerId": "",
+            "name": "Amortization Table",
+            "url": "{{BASE_URL}}/loans/amortization-table/{id}/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-08-10T09:21:19.347Z",
+            "modified": "2023-08-10T09:22:19.673Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token "
+                }
+            ],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "85f3a995-3c8a-46f4-92f8-d81eb69133c4",
+            "colId": "bb0bca57-f7b3-43ba-b37b-24f7c094cb7d",
+            "containerId": "",
+            "name": "Create Loan",
+            "url": "{{BASE_URL}}/loans/create-loan/",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-08-10T09:24:50.192Z",
+            "modified": "2023-08-10T09:26:59.970Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"amount\": \"1200000\",\n\"min_amount\": \"100000\",\n\"max_amount\": \"40000000\",\n\"duration\": 48,\n\"interest_rate\": \"6.7\",\n\"loan_provider\": 3,\n\"loan_customer\": 2\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9097ba0f-2a12-44f9-a132-1d7edaa0f674",
+            "colId": "bb0bca57-f7b3-43ba-b37b-24f7c094cb7d",
+            "containerId": "",
+            "name": "Loan Application",
+            "url": "{{BASE_URL}}/loans/loan-application/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-08-10T09:32:35.713Z",
+            "modified": "2023-08-10T09:36:08.495Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token token"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"amount\": \"1200000\",\n\"min_amount\": \"100000\",\n\"max_amount\": \"40000000\",\n\"duration\": 48,\n\"interest_rate\": \"6.7\",\n\"loan_provider\": 3,\n\"loan_customer\": 2\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9de0b40d-4da6-4b0c-a83d-b33f41569057",
+            "colId": "bb0bca57-f7b3-43ba-b37b-24f7c094cb7d",
+            "containerId": "",
+            "name": "Customer List",
+            "url": "{{BASE_URL}}/loans/loan-customer-list/",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-08-10T09:36:48.851Z",
+            "modified": "2023-08-10T09:39:51.018Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token token"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "85bcc591-9c17-4067-85fa-dc5f6819a0ad",
+            "colId": "bb0bca57-f7b3-43ba-b37b-24f7c094cb7d",
+            "containerId": "",
+            "name": "Provider List",
+            "url": "",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-08-10T09:40:33.759Z",
+            "modified": "2023-08-10T09:40:33.759Z",
+            "headers": []
+        },
+        {
+            "_id": "5e7c19d5-b06c-4ab3-84b9-6c63ddf28895",
+            "colId": "bb0bca57-f7b3-43ba-b37b-24f7c094cb7d",
+            "containerId": "",
+            "name": "Provider List",
+            "url": "{{BASE_URL}}/loans/loan-provider-list/",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-08-10T09:42:07.355Z",
+            "modified": "2023-08-10T09:42:25.678Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "73727e60-c124-4b8b-af3c-a05905c99405",
+            "colId": "bb0bca57-f7b3-43ba-b37b-24f7c094cb7d",
+            "containerId": "",
+            "name": "Loan Detail",
+            "url": "{{BASE_URL}}/loans/loan-detail/{id}/",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-08-10T09:46:08.300Z",
+            "modified": "2023-08-10T09:46:44.766Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token token"
+                }
+            ],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "43cd620c-0939-4901-a930-ddbf42cb3f19",
+            "colId": "bb0bca57-f7b3-43ba-b37b-24f7c094cb7d",
+            "containerId": "",
+            "name": "Loan Details Update",
+            "url": "{{BASE_URL}}/loans/loan-detail/{id}/",
+            "method": "PUT",
+            "sortNum": 130000,
+            "created": "2023-08-10T09:47:38.897Z",
+            "modified": "2023-08-10T09:50:16.188Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token token"
+                }
+            ],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"amount\": \"1222552\",\n\"min_amount\": \"100000\",\n\"max_amount\": \"13000000\",\n\"duration\": 34,\n\"interest_rate\": \"5.6\",\n\"loan_provider\":3,\n\"loan_customer\":2\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7ddb7318-f27c-4211-afa2-753d659af71b",
+            "colId": "bb0bca57-f7b3-43ba-b37b-24f7c094cb7d",
+            "containerId": "",
+            "name": "Loan Detaol Partial Update",
+            "url": "{{BASE_URL}}/loans/loan-detail/{id}/",
+            "method": "PATCH",
+            "sortNum": 160000,
+            "created": "2023-08-10T09:51:16.833Z",
+            "modified": "2023-08-10T09:53:05.051Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"amount\": \"1200000\",\n\"min_amount\": \"100000\",\n\"max_amount\": \"13000000\",\n\"duration\": 34,\n\"interest_rate\": \"5\",\n\"loan_provider\":3,\n\"loan_customer\":2\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "07539eb3-d5b8-40bf-aa65-bdfc57dbf8c1",
+            "colId": "bb0bca57-f7b3-43ba-b37b-24f7c094cb7d",
+            "containerId": "",
+            "name": "Loan Delete",
+            "url": "{{BASE_URL}}/loans/loan-detail/{id}/",
+            "method": "DELETE",
+            "sortNum": 170000,
+            "created": "2023-08-10T09:53:41.189Z",
+            "modified": "2023-08-10T09:54:01.647Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token token"
+                }
+            ],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "ace5fac7-50a0-4b89-88c7-4599433c000b",
+            "colId": "bb0bca57-f7b3-43ba-b37b-24f7c094cb7d",
+            "containerId": "",
+            "name": "Loan List",
+            "url": "{{BASE_URL}}/loans/loan-list/",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2023-08-10T09:54:56.104Z",
+            "modified": "2023-08-10T09:57:20.350Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token token"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "03ad7e74-8df7-473e-9277-56b405ef0b87",
+            "colId": "bb0bca57-f7b3-43ba-b37b-24f7c094cb7d",
+            "containerId": "",
+            "name": "Loan Payment Update",
+            "url": "{{BASE_URL}}/loans/loan-payment/",
+            "method": "PUT",
+            "sortNum": 190000,
+            "created": "2023-08-10T09:59:46.625Z",
+            "modified": "2023-08-10T10:03:16.150Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token token"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"installment_number\": 1,\n\"payment_date\": \"2019-08-24\",\n\"principal\": \"11111111\",\n\"interest\": \"1212\",\n\"total_payment\": \"12121212\",\n\"loan\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "567eb3a4-18ca-486f-9c48-9699c3c76e38",
+            "colId": "bb0bca57-f7b3-43ba-b37b-24f7c094cb7d",
+            "containerId": "",
+            "name": "Loan Paymnet Partial Update",
+            "url": "{{BASE_URL}}/loans/loan-payment/",
+            "method": "PATCH",
+            "sortNum": 210000,
+            "created": "2023-08-10T10:05:04.175Z",
+            "modified": "2023-08-10T10:05:36.000Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token token"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"installment_number\": 1,\n\"payment_date\": \"2019-08-24\",\n\"principal\": \"222222222\",\n\"interest\": \"1212\",\n\"total_payment\": \"12121212\",\n\"loan\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

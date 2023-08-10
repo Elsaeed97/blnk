@@ -1,0 +1,6 @@
+
+# PostgreSQL 13 alpine image
+FROM postgres:13-alpine
+
+# PostgreSQL default port
+EXPOSE 5432
