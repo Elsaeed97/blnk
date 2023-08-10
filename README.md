@@ -6,6 +6,7 @@ this is a task for a back-end developer role at blnk
 This is Web Based Application for managing loans built with  Python, Django, Django-rest framework and Postgresql database.
 And has different user roles: Loan Providers, Loan Customers, and Bank Personnel.
 
+#### Create a .env file that will hold postgres secrets and django keys next to the docker-compose.yml file 
 # Installation
 git clone https://github.com/Elsaeed97/blnk.git
 cd blnk/backend
@@ -53,7 +54,6 @@ You can find API Endpoints in the blnk-collection.json file
 
 # API Documentaion 
 YASG: http://0.0.0.0:8000/redoc/
-
 
 
 
