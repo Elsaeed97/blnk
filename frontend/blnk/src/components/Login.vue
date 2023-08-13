@@ -23,34 +23,32 @@
   </template>
 
   <script>
-//   export default {
-//     name: "Login",
-//     data() {
-//       return {
-//         username: "",
-//         password: "",
-//       };
-//     },
-//     methods: {
-//       login() {
-//         // Make an API call to login the user
-//         axios
-//           .post("http://localhost:8000/api/login", {
-//             username: this.username,
-//             password: this.password,
-//           })
-//           .then((response) => {
-//             // If the login is successful, redirect the user to the home page
-//             if (response.status === 200) {
-//               window.location.href = "/";
-//             }
-//           })
-//           .catch((error) => {
-//             // If the login fails, show an error message
-//             console.log(error);
-//             alert("Login failed");
-//           });
-//       },
-//     },
-//   };
+  export default {
+    name: "Login",
+    data() {
+      return {
+        username: "",
+        password: "",
+      };
+    },
+    methods: {
+      login() {
+        axios
+          .post("http://localhost:8000/api/users/login", {
+            username: this.username,
+            password: this.password,
+          })
+          .then((response) => {
+            // If the login is successful, redirect the user to the home page
+            if (response.status === 200) {
+              window.location.href = "/";
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+            alert("Login failed");
+          });
+      },
+    },
+  };
   </script>
